@@ -89,7 +89,7 @@ CTA (Call to Action): Короткий призыв для подписи к п�
 {user_text}"""
 
             try:
-                model = genai.GenerativeModel('gemini-pro')
+                model = genai.GenerativeModel('gemini-1.5-flash')
                 response = model.generate_content(analyst_prompt)
 
                 # Extract JSON from response
@@ -211,7 +211,7 @@ Return ONLY the HTML + Tailwind CSS inside ```html``` code blocks.
 No commentary."""
 
                 try:
-                    model = genai.GenerativeModel('gemini-pro')
+                    model = genai.GenerativeModel('gemini-1.5-flash')
                     response = model.generate_content(coder_prompt)
 
                     # Extract HTML from response
